@@ -173,7 +173,7 @@ export const Conversation = styled.button`
 
 export const MessageContact = styled.div`
     width: 100%;
-    height: 575 px;
+    height: 575px;
 `;
 
 export const InputText = styled.div`
