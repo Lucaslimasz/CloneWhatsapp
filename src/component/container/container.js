@@ -13,7 +13,8 @@ import image8 from '../../image/allContact/image4.jpg'
 
 import { Wrapper, BackgroundGreen, Container, ContainerContact,
         ContainerMessage, Information, Contact, ContactInformation,
-        Conversation, NumberAndMessage, Hours
+        Conversation, NumberAndMessage, Hours, ContainerConversation,
+        InputText, MessageContact
     } from './containerStyled';
 
 export default class container extends React.Component{
@@ -26,7 +27,7 @@ export default class container extends React.Component{
                             <Information>
                                 <img src={imgContact} alt="img" />
                                 <div>
-                                    <i class="fas fa-ellipsis-v fa-2x"></i>
+                                    <i className="fas fa-ellipsis-v fa-2x"></i>
                                     <i className="fas fa-comment-alt fa-2x"></i>
                                 </div>
                             </Information>
@@ -36,77 +37,124 @@ export default class container extends React.Component{
                                     <input type="text" placeholder="Procurar ou começar uma nova conversa" />
                                 </div>
                             </ContactInformation>
+                        
 
-                            <Conversation>
-                                <img src={image1} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                            <ContainerConversation>
 
-                            </Conversation>
-                            <Conversation>
-                                <img src={image2} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                <Conversation>
+                                    <img src={image1} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
 
-                            </Conversation>
-                            <Conversation>
-                                <img src={image3} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                </Conversation>
+                                
+                                <Conversation>
+                                    <img src={image2} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
 
-                            </Conversation>
-                            <Conversation>
-                                <img src={image5} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                </Conversation>
 
-                            </Conversation>
-                            <Conversation>
-                                <img src={image6} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                <Conversation>
+                                    <img src={image3} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
 
-                            </Conversation>
+                                </Conversation>
 
-                            <Conversation>
-                                <img src={image7} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                <Conversation>
+                                    <img src={image8} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
 
-                            </Conversation>
-                            <Conversation>
-                                <img src={image8} alt="img" />
-                                <NumberAndMessage>
-                                    <a>+55 83 98905-0001</a>
-                                    <p>Clonando o zapizapi</p>
-                                </NumberAndMessage>
-                                <Hours>14:53</Hours>
+                                </Conversation>
 
-                            </Conversation>
+                                <Conversation>
+                                    <img src={image5} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
+
+                                </Conversation>
+
+                                <Conversation>
+                                    <img src={image6} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
+
+                                </Conversation>
+
+                                <Conversation>
+                                    <img src={image7} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
+
+                                </Conversation>
+
+                                <Conversation>
+                                    <img src={image8} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
+
+                                </Conversation>
+
+                                <Conversation>
+                                    <img src={image1} alt="img" />
+                                    <NumberAndMessage>
+                                        <a>+55 83 98905-0001</a>
+                                        <p>Clonando o zapizapi</p>
+                                    </NumberAndMessage>
+                                    <Hours>14:53</Hours>
+
+                                </Conversation>
+                            </ContainerConversation>
 
                         </ContainerContact>
                         <ContainerMessage>
                             <Contact>
+                                <img src={imgContact} alt="img" />
+                                <p>+21 22 2211-2211</p>
+
+                                <div>
+                                    <i className="fas fa-search fa-2x "></i>
+                                    <i className="fas fa-paperclip fa-2x"></i>
+                                    <i className="fas fa-ellipsis-v fa-2x"></i>
+                                </div>
 
                             </Contact>
+                            
+                            <MessageContact>
+                                
+                            </MessageContact>
+
+                            <InputText>
+                                <i className="far fa-laugh fa-2x"></i>
+                                <input type="text" placeholder="Deixe uma mensagem" />
+                                <i class="fas fa-microphone fa-2x"></i>
+                            </InputText>
                         </ContainerMessage>
                     </Container>
                  </BackgroundGreen>
