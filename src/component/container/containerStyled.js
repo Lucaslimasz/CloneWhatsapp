@@ -45,7 +45,7 @@ export const ContainerContact = styled.div`
 // informação do contato
 export const Information = styled.div`
     width: 100%;
-    height: 90px;
+    height: 12%;
     background: #ededed;
     border-left: .2px solid rgba( 159, 159, 159 ,.5);
     border-radius: 10px 0 0 0px;
@@ -75,7 +75,7 @@ export const Information = styled.div`
 // container dos contatos
 export const Contact = styled.div`
     width: 100%;
-    height: 90px;
+    height: 12%;
     background: #ededed;
     border-left: .2px solid rgba( 159, 159, 159 ,.4);
     border-radius: 0 10px 0 0;
@@ -106,7 +106,7 @@ export const Contact = styled.div`
 // informação dos contatos
 export const ContactInformation = styled.div`
     width: 100%;
-    height: 70px;
+    height: 10%;
     background: #f7f7f7;
     display: flex;
     
@@ -173,13 +173,13 @@ export const Conversation = styled.button`
 
 export const MessageContact = styled.div`
     width: 100%;
-    height: 575px;
+    height: 78%;
 `;
 
 export const InputText = styled.div`
     width: 100%;
     background: #ededed;
-    height: 70px;
+    height: 10%;
     margin: auto;
     display:flex;
     align-items: center;
@@ -226,7 +226,7 @@ export const Hours = styled.div`
 export const ContainerConversation = styled.div`
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 570px;
+    height: 78%;
 
     &::-webkit-scrollbar{
         width: 10px;
